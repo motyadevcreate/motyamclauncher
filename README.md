@@ -2,7 +2,7 @@
 A launcher without unnecessary functions. Download and launch only!
 
 # Installing
-Please, install PyQt5.
+Please, install python3 and PyQt5.
 
 pip install PyQt5
 
