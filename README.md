@@ -2,9 +2,7 @@
 A launcher without unnecessary functions. Download and launch only!
 
 # Installing
-Please, install python3 and PyQt5.
-
-pip install PyQt5
+Just install this program!
 
 # Creators
 MotyaDev - main developer.
