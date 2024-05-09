@@ -9,7 +9,7 @@ import os
 
 pip.main(["install", "pyinstaller"])
 
-os.system("pyinstaller main.py ---onefile")
+os.system("pyinstaller main.py --onefile")
 
 print("Done")
 
