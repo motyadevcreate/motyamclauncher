@@ -6,7 +6,6 @@ from minecraft_launcher_lib.utils import get_minecraft_directory, get_version_li
 from minecraft_launcher_lib.install import install_minecraft_version
 from minecraft_launcher_lib.command import get_minecraft_command
 
-# Эти импорты не обязательны, вместо generate_username()[0] и str(uuid1()) можно оставить просто ''
 from random_username.generate import generate_username
 from uuid import uuid1
 
@@ -68,7 +67,7 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("Motya Minecraft Launcher")
 
-        icon_path = "icon.ico"  # Замените на путь к вашей иконке
+        icon_path = "icon.ico"  
         self.setWindowIcon(QIcon(icon_path))
 
         self.resize(300, 283)
@@ -91,9 +90,7 @@ class MainWindow(QMainWindow):
         
         self.progress_spacer = QSpacerItem(20, 20, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Minimum)
         
-        # Исправил проблему с созданием описания для полосы прогресса
-        # В [24:01] можно заметить что QProgressDialog работает не так как надо, а просто QProgressBar не имеет при себе описания
-        # Из-за этого я удалил систему с описанием, но тут я ее добавил, просто дописав еще один элемент - QLabel, ну и не забыв добавить его в self.vertical_layout :)
+       
         self.start_progress_label = QLabel(self.centralwidget)
         self.start_progress_label.setText('')
         self.start_progress_label.setVisible(False)
