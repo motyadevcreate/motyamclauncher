@@ -11,5 +11,7 @@ install python, and execute:
 
 in dist .exe file.
 
+###### (function in alpha version. Follow in official build instructions in pyinstaller.)
+
 # Creators
 MotyaDev - main developer.
